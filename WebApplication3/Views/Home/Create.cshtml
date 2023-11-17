@@ -1,0 +1,20 @@
+﻿@model LibraryProject.Models.Book
+
+<h2>Додати книжку</h2>
+<form asp-action="create" asp-controller="home">
+    <p>
+        <label asp-for="Id">Id</label><br />
+        <input type="text" asp-for="Id" />
+    </p>
+    <p>
+        <label asp-for="Name">Назва</label><br />
+        <input type="text" asp-for="Name" />
+    </p>
+    <p>
+        <label asp-for="Author">Автор</label><br />
+        <input type="text" asp-for="Author" />
+    </p>
+    <p>
+        <input type="submit" value="Додати" />
+    </p>
+</form>
